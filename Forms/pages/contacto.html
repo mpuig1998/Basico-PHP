@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoteles</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fenomenal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../pages/hoteles.html">Hoteles</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../pages/pagos.html">Pagos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" class="btn btn-dark">
+        <i class="bi bi-cart-fill"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<main class="flex-grow-1">
+
+  <!-- HEADER -->
+  <header class="bg-dark text-white py-3">
+    <div class="container-lg">
+      <h3>
+        Tus hoteles de confianza
+      </h3>
+    </div>
+  </header>
+
+  <!-- FORMULARIO -->
+  <div class="container-lg my-5">
+      <!-- ALERTAS AQUÍ -->
+    <form action="../php.php" method="POST">
+      <div class="row">
+
+        <div class="col-12 col-md-6 mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="col-12 col-md-6 mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" name="correo" required>
+        </div>
+
+        <div class="col-12 mb-3">
+          <label for="movil" class="form-label">Móvil</label>
+          <input type="tel" class="form-control" id="movil" name="movil">
+        </div>
+
+        <div class="col-12 mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <div class="col-12 d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">
+            Enviar
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-3 mt-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col text-start">
+        <p><i class="bi bi-geo-alt-fill me-2"></i>Dirección</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>Número</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>Mail</p>
+      </div>
+
+      <div class="col text-center">
+        <p><a href="#" class="text-decoration-none text-white">
+          Términos y condiciones
+        </a></p>
+      </div>
+
+          </div>
+              <div class="col text-end">
+              <p>
+                  <a href="#" class="text-decoration-none text-white">
+                  Facebook<i class="bi bi-facebook me-2"></i>
+                  </a>
+              </p>
+              <p>
+                  <a href="#" class="text-decoration-none text-white">
+                  Twitter<i class="bi bi-twitter me-2"></i>
+                  </a>
+              </p>
+              <p>
+                  <a href="#" class="text-decoration-none text-white">
+                  Instagram<i class="bi bi-instagram me-2"></i>
+                  </a>
+              </p>
+              </div>
+          </div>
+  </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/alerts.js"></script>
+</body>
+</html>

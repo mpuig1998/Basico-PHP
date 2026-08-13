@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoteles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css.css" rel="stylesheet">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fenomenal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="pages\hoteles.html">Hoteles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="pages\pagos.html">Pagos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Botón de carrito al final -->
+      <div class="d-flex">
+        <a href="#" class="btn btn-dark">
+          <i class="bi bi-cart-fill me-1"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+  <!-- HEADER -->
+  <header class="bg-dark text-white py-3">
+    <div class="container-lg">
+      <h3>
+        Tus hoteles de confianza
+      </h3>
+    </div>
+  </header>
+    <!--Carousel-->
+    <div class="container-lg">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="IMG\Amarillo.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="IMG\Azul.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="IMG\Morado.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-lg relleno">
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipiscing elit, taciti dictumst convallis libero netus egestas, iaculis porttitor erat luctus ultricies imperdiet. Volutpat eu quis dui varius tempor a donec arcu primis venenatis, habitasse porta sagittis laoreet magnis molestie vitae leo augue suspendisse lectus, taciti ac lacinia vestibulum morbi mauris montes hac parturient. Facilisis lectus eu quisque rutrum malesuada lacinia ut vel, molestie felis id arcu cubilia eros pretium vitae venenatis, luctus ornare odio massa varius montes fringilla.
+        Justo curabitur venenatis eleifend per pretium eget turpis ultricies scelerisque inceptos conubia, sollicitudin interdum ut rutrum imperdiet porta erat lobortis vel facilisi, ornare luctus nostra bibendum leo gravida taciti id in odio. Fames nisi luctus arcu praesent hac malesuada gravida placerat blandit donec, proin curabitur nec senectus montes pulvinar facilisi suspendisse tortor cursus laoreet, cum magna velit euismod felis est lectus commodo sollicitudin. Justo dictum facilisi enim convallis porttitor sagittis, nam netus sociosqu erat volutpat sollicitudin, odio iaculis nullam ridiculus eu.
+        </p>
+
+    </div>
+
+    <!--Footer-->
+        <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col text-start">
+                <p>
+                    <i class="bi bi-geo-alt-fill me-2"></i>Dirección
+                </p>
+                <p>
+                    <i class="bi bi-telephone-fill me-2"></i>Número
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill me-2"></i>Mail
+                </p>
+                </div>
+            <div class="col text-center">
+                    <p><a href="" href="#" class="text-decoration-none text-white">
+                        Terminos y condiciones
+                    </a></p>   
+            </div>
+                <div class="col text-end">
+                <p>
+                    <a href="#" class="text-decoration-none text-white">
+                    Facebook<i class="bi bi-facebook me-2"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="#" class="text-decoration-none text-white">
+                    Twitter<i class="bi bi-twitter me-2"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="#" class="text-decoration-none text-white">
+                    Instagram<i class="bi bi-instagram me-2"></i>
+                    </a>
+                </p>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('#carouselExample');
+            new bootstrap.Carousel(carousel, {
+            interval: 5000,
+            ride: 'carousel',
+            wrap: true
+            });
+        });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Subir archivo</h1>
+
+    <form id="formulario" action="upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="archivo" required>
+        <button type="submit">Subir archivo</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <h2>Archivos subidos:</h2>
+    <ul id="lista"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

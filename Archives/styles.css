@@ -1,0 +1,41 @@
+/* Centrar todo en pantalla */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Tarjeta */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Botón */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista */
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
